@@ -1,5 +1,6 @@
 require_relative 'robot_command'
 
+# Represents the Robot Command  for Move Instruction
 class MoveCommand < RobotCommand
 
   def initialize(robot = nil)

@@ -6,12 +6,16 @@ require_relative 'report_command'
 require_relative 'robot_command'
 require_relative 'invalid_command'
 
+# Creates a Command Factory
 class CommandFactoryCreator
 
   def initialize(robot, command_factories = get_default_command_factories(robot))
     @commandFactories = command_factories
   end
 
+
+  # @param [String] command_str
+  # @return [RobotCommand]
   def get_command_factory(command_str)
     command_name = command_str.split(' ')[0]
     commandFactory = get_commandFactory_matching_name(command_name)

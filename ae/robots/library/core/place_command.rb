@@ -1,6 +1,6 @@
 require_relative 'robot_command'
 
-
+# Represents the Robot Command  for Place Instruction
 class PlaceCommand < RobotCommand
 
   attr_accessor :x, :y, :face_name

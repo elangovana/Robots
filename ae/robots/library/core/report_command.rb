@@ -1,4 +1,6 @@
 require_relative 'robot_command'
+
+# Represents the Robot Command  for Report Instruction
 class ReportCommand < RobotCommand
 
   def initialize(robot = nil)

@@ -1,4 +1,6 @@
 require_relative 'robot_command'
+
+# Represents the Robot Command  for Left Instruction
 class LeftCommand < RobotCommand
 
 

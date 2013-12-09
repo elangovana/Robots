@@ -1,5 +1,6 @@
 require_relative 'robot_command'
 
+# Represents the Robot Command  for Right Instruction
 class RightCommand < RobotCommand
 
   def initialize(robot = nil)
